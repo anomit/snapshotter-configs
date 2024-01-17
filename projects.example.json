@@ -1,14 +1,35 @@
 {
-  "config": [
+  "config": [{
+      "project_type": "pairContract_pair_total_reserves",
+      "preload_tasks":[
+        "eth_price",
+        "block_details"
+      ],
+      "processor":{
+        "module": "snapshotter.modules.computes.pair_total_reserves",
+        "class_name": "PairTotalReservesProcessor"
+      }
+    },
     {
-      "project_type": "dummy:snapshot",
+      "project_type": "pairContract_trade_volume",
+      "preload_tasks":[
+        "eth_price",
+        "block_details"
+      ],
+        "processor":{
+          "module": "snapshotter.modules.computes.trade_volume",
+          "class_name": "TradeVolumeProcessor"
+        }
+    },
+    {
+      "project_type": "pairContract_factory_monitor",
       "preload_tasks":[
         "block_transactions"
       ],
-      "processor":{
-        "module": "snapshotter.modules.computes.dummy_snapshot",
-        "class_name": "DummySnapshotGenerator"
-      }
+        "processor":{
+          "module": "snapshotter.modules.computes.factory_monitor",
+          "class_name": "FactoryMonitorProcessor"
+        }
     }
   ]
 }
