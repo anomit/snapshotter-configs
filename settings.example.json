@@ -57,6 +57,10 @@
     "slack_url": "https://slack-reporting-url",
     "service_url": "https://powerloom-reporting-url"
   },
+  "relayer": {
+    "host": "https://relayer-url",
+    "endpoint": "/submitSnapshot"
+  },
   "redis": {
     "host": "redis",
     "port": 6379,
@@ -81,7 +85,8 @@
   "pair_contract_abi": "snapshotter/static/abis/UniswapV2Pair.json",
   "protocol_state": {
     "abi": "snapshotter/static/abis/ProtocolContract.json",
-    "address": "protocol-state-contract"
+    "address": "protocol-state-contract",
+    "deadline_buffer": 60
   },
   "callback_worker_config": {
     "num_delegate_workers": 0,
