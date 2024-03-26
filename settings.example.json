@@ -86,7 +86,8 @@
   "protocol_state": {
     "abi": "snapshotter/static/abis/ProtocolContract.json",
     "address": "protocol-state-contract",
-    "deadline_buffer": 60
+    "deadline_buffer": 60,
+    "day_counter_buffer": 23
   },
   "callback_worker_config": {
     "num_delegate_workers": 0,
