@@ -87,7 +87,7 @@
     "abi": "snapshotter/static/abis/ProtocolContract.json",
     "address": "protocol-state-contract",
     "deadline_buffer": 60,
-    "day_counter_buffer": 23,
+    "day_counter_buffer": 36,
     "chain_id": prost-chain-id
   },
   "callback_worker_config": {
