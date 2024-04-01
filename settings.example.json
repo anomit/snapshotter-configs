@@ -28,7 +28,7 @@
     }
   },
   "rlimit": {
-    "file_descriptors": 2048
+    "file_descriptors": 40960
   },
   "rabbitmq": {
     "user": "guest",
