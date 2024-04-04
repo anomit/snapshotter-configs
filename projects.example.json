@@ -5,6 +5,9 @@
       "preload_tasks":[
         "block_transactions"
       ],
+      "projects":[
+      ],
+      "bulk_mode": true,
       "processor":{
         "module": "snapshotter.modules.computes.dummy_snapshot",
         "class_name": "DummySnapshotGenerator"
