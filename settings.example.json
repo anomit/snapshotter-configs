@@ -1,5 +1,6 @@
 {
   "namespace": "relevant-namespace",
+  "signer_private_key": "signer-account-private-key",
   "core_api": {
     "host": "0.0.0.0",
     "port": 8002,
@@ -29,6 +30,15 @@
   },
   "rlimit": {
     "file_descriptors": 2048
+  },
+  "snapshot_submission": {
+    "enabled": true,
+    "signers": [
+      {
+        "address": "signer-address",
+        "private_key": "signer-private-key"
+      }
+    ]
   },
   "rabbitmq": {
     "user": "guest",
@@ -81,7 +91,8 @@
   "pair_contract_abi": "snapshotter/static/abis/UniswapV2Pair.json",
   "protocol_state": {
     "abi": "snapshotter/static/abis/ProtocolContract.json",
-    "address": "protocol-state-contract"
+    "address": "protocol-state-contract",
+    "deadline_buffer": 1000
   },
   "callback_worker_config": {
     "num_delegate_workers": 0,
