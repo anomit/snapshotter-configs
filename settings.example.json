@@ -31,7 +31,7 @@
   "rlimit": {
     "file_descriptors": 2048
   },
-  "snapshot_submission": {
+  "snapshot_submissions": {
     "enabled": true,
     "signers": [
       {
